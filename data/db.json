@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": "7051",
+      "enteredTitle": "I need your Grace",
+      "enteredBody": "God please i need your grace. I am currently seeking for a job as a web developer, but i have not be lucky",
+      "enteredAuthor": "voke"
+    },
+    {
+      "id": "fe9f",
+      "enteredTitle": "React",
+      "enteredBody": "I really love react. React is like my bread and tea. So i have been searching and applying for a role as a react developer, but all to no avail. I hope it will all end well.",
+      "enteredAuthor": "voke"
+    }
+  ]
+}
