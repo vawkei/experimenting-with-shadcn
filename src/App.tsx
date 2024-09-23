@@ -6,6 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  console.log(isLoggedIn)
 
   // usually i am not to do this:prop drilling, but will do so for this dummy project.
   const isLoggedInHandlerTrue = () => {

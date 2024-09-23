@@ -17,9 +17,12 @@ const MainNavigation: React.FC<{
   return (
     <div className="">
       <div className="sm:hidden">
-        <MobileMainNavigation />
+        <MobileMainNavigation
+          isLoggedIn={isLoggedIn}
+          onLogoutHandler={props.onIsLoggedInHandlerFalse}
+        />
       </div>
-      <Card className="flex items-center justify-between w-full mx-auto max-w-4xl mt-4 p-4">
+      <Card className="hidden  sm:flex items-center justify-between w-full mx-auto max-w-4xl mt-4 p-4">
         <h2 className="text-3xl font-semibold">Shadcn Practice</h2>
         <NavigationMenu>
           <NavigationMenuList className="flex items-center  gap-4">

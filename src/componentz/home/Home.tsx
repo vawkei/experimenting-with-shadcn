@@ -12,6 +12,7 @@ const Home: React.FC<{
   isLoggedIn: boolean;
 }> = (props) => {
   const isLoggedIn = props.isLoggedIn;
+  console.log(isLoggedIn);
 
   interface Blogs {
     id: string;
@@ -44,7 +45,7 @@ const Home: React.FC<{
     if (isLoggedIn) {
       fetchBlogs();
     }
-  }, [blogs]);
+  }, [isLoggedIn]);
 
   return (
     <div>
@@ -57,12 +58,11 @@ const Home: React.FC<{
             return (
               <li key={blog.id} className="px-0 py-4">
                 <Card>
-                  <h2>
-                    <CardTitle className="text-red-500 p-2"> {blog.enteredTitle}</CardTitle>
-                  </h2>
-                  <h5 >
-                    <CardFooter className="p-2">{blog.enteredAuthor}</CardFooter>
-                  </h5>
+                  <CardTitle className="text-red-500 p-2">
+                    {blog.enteredTitle}
+                  </CardTitle>
+
+                  <CardFooter className="p-2">{blog.enteredAuthor}</CardFooter>
                 </Card>
               </li>
             );
